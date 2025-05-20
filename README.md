@@ -51,3 +51,10 @@ Vector DB files (db_large_all/) are large and ignored via .gitignore.
 
 You can modify rag_pipeline.py to integrate other LLMs or documents.
 ```
+
+
+### Video:
+
+https://github.com/user-attachments/assets/ce08d986-bb8b-4fae-9ce8-5e72a548315a
+
+
