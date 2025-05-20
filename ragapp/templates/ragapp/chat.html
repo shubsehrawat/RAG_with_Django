@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask Questions....</title>
+    {% load static %}  <!-- Load static tag -->
+    <link rel="stylesheet" href="{% static 'ragapp/styles.css' %}">  <!-- Link to the static file -->
+</head>
+<body>
+    <div class="container">
+        <h1>RAG Chatbot</h1>
+        <form method="post">
+            {% csrf_token %}
+            <textarea name="query" placeholder="Ask a question..." required>{{ user_input }}</textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+
+        {% if response %}
+        <div class="response">
+            <h3>AI Response:</h3>
+            <p>{{ response }}</p>
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

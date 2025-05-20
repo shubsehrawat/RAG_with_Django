@@ -38,12 +38,16 @@ git clone https://github.com/yourusername/django-rag.git
 cd django-rag
 ```
 ### 2. Create a Virtual Environment
+```bash
 python -m venv venv
 venv\Scripts\activate
+```
 
 ### 3. 📁 Notes
+```bash
 The file harrypotter.pdf is used as a demo document.
 
 Vector DB files (db_large_all/) are large and ignored via .gitignore.
 
 You can modify rag_pipeline.py to integrate other LLMs or documents.
+```
