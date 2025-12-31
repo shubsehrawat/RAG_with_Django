@@ -4,7 +4,7 @@ A production-style Retrieval-Augmented Generation (RAG) application built using 
 
 This project demonstrates how real AI engineers build grounded, verifiable AI systems — not just chatbots.
 
-# 🚀 Features
+## 🚀 Features
 
 ✅ Document-Grounded Q&A (RAG)
 Answers are generated only from the provided documents.
@@ -24,7 +24,7 @@ Efficient semantic retrieval using OpenAI embeddings.
 ⚙️ Production-Safe Architecture
 No notebooks, no shortcuts — proper backend + UI separation.
 
-# 🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 User Query
    ↓
 Django View
@@ -39,21 +39,16 @@ Answer + Source Citations
    ↓
 UI Response
 
-🧠 Tech Stack
+### 🧠 Tech Stack
 
-Backend: Django (Python)
+1. Backend: Django (Python)
+2. LLM: OpenAI GPT-4o
+3. Embeddings: OpenAI text-embedding-3-large
+4. Vector Store: ChromaDB (persistent)
+5. Frameworks: LangChain
+6. UI: Django Templates (HTML + CSS)
 
-LLM: OpenAI GPT-4o
-
-Embeddings: OpenAI text-embedding-3-large
-
-Vector Store: ChromaDB (persistent)
-
-Frameworks: LangChain
-
-UI: Django Templates (HTML + CSS)
-
-# 📂 Project Structure
+### 📂 Project Structure
 RAG_with_Django/
 │
 ├── ragapp/
@@ -75,7 +70,7 @@ RAG_with_Django/
 ├── .env.example
 └── README.md
 
-⚙️ Setup Instructions
+###  Setup Instructions
 1️⃣ Clone the Repository
 git clone https://github.com/shubsehrawat/RAG_with_Django.git
 cd RAG_with_Django
@@ -93,7 +88,6 @@ Create a .env file:
 
 OPENAI_API_KEY=your_openai_api_key_here
 
-
 ⚠️ Never commit .env — it is intentionally ignored.
 
 5️⃣ Add Documents
@@ -102,22 +96,10 @@ Place your files inside:
 
 ragapp/documents/
 
-
-Supported formats:
-
-PDF
-
-TXT
-
-CSV
-
-DOCX
-
-XLSX
+Supported formats: PDF, TXT, CSV, DOCX, XLSX
 
 6️⃣ Build the Vector Store
 python ragapp/vector_db.py
-
 
 Expected output:
 
@@ -127,12 +109,11 @@ VECTOR COUNT: XXXX
 7️⃣ Run the Django Server
 python manage.py runserver
 
-
-Open in browser:
+### Open in browser:
 
 http://127.0.0.1:8000/
 
-🧪 Example Questions
+### Example Questions
 
 “Who is Harry Potter?”
 
@@ -140,9 +121,9 @@ http://127.0.0.1:8000/
 
 “What role did Snape play in protecting Harry?”
 
-Each answer will include document citations.
+### Each answer will include document citations.
 
-🔐 Security & Best Practices
+### 🔐 Security & Best Practices
 
 ✅ .env is excluded from version control
 
@@ -152,7 +133,7 @@ Each answer will include document citations.
 
 ✅ Collection names are fixed to avoid Chroma UUID issues
 
-🎯 Why This Project Matters
+### 🎯 Why This Project Matters
 
 This project demonstrates:
 
@@ -164,7 +145,7 @@ How to combine ML + backend engineering
 
 How to design trustworthy AI systems
 
-Perfect for:
+#### Perfect for:
 
 AI engineering portfolios
 
@@ -186,14 +167,13 @@ Live demos & webinars
 
 ☁️ Cloud hosting (Azure / GCP / AWS)
 
-👨‍💻 Author
-
-Shubham Chaudhary
-AI Engineer | Data Science | GenAI Systems
+### 👨‍💻 Author
+--- Shubham Chaudhary
+--- AI Engineer | Data Science | GenAI Systems
 
 🔗 GitHub: https://github.com/shubsehrawat
 
-🔗 LinkedIn: (add your LinkedIn here)
+🔗 LinkedIn: https://www.linkedin.com/in/shubham-chaudhary-308929117/
 
 📄 License
 
